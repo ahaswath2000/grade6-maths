@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>கணித மதிப்பீடு - தரம் 6</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f0f4f8; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 850px; margin: auto; background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); }
+        .header { text-align: center; border-bottom: 3px solid #1a5276; margin-bottom: 30px; padding-bottom: 10px; }
+        .header h1 { color: #d35400; font-size: 24px; margin-bottom: 5px; }
+        .header h2 { color: #1a5276; font-size: 20px; margin-top: 0; }
+        .question-box { background: #fdfefe; border: 1px solid #e5e8e8; padding: 20px; margin-bottom: 20px; border-radius: 10px; border-left: 6px solid #1a5276; }
+        .q-text { font-size: 17px; font-weight: bold; display: block; margin-bottom: 15px; }
+        .option { display: block; padding: 12px; background: #fff; margin: 8px 0; border: 1px solid #d5dbdb; border-radius: 6px; cursor: pointer; transition: 0.2s; }
+        .option:hover { background: #ebf5fb; }
+        input[type="radio"] { margin-right: 12px; transform: scale(1.2); }
+        .submit-btn { width: 100%; padding: 15px; background: #1a5276; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 20px; }
+        .submit-btn:hover { background: #154360; }
+        .feedback { display: none; margin-top: 10px; padding: 10px; border-radius: 5px; font-weight: bold; }
+        .correct-ans { background-color: #d4edda; color: #155724; }
+        .wrong-ans { background-color: #f8d7da; color: #721c24; }
+        #result-area { display: none; margin-top: 40px; padding: 30px; border-radius: 15px; text-align: center; border: 3px solid #1a5276; }
+        .grade-box { font-size: 28px; font-weight: bold; margin: 15px 0; }
+        .A { color: #27ae60; } .B { color: #2980b9; } .C { color: #f1c40f; } .S { color: #e67e22; } .F { color: #c0392b; }
+		  .underline {
+            text-decoration: underline;
+            color: #e74c3c; /* கோடிடப்பட்ட இலக்கம் சிவப்பு நிறத்தில் */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>குல்லியத் தாருல் உலூம் ஹிப்ழ் குர்ஆன்</h1>
+        <h2>கணிதப் பாடப் பயிற்சி - தரம் 6 (புதிய பாடத்திட்டம்)</h2>
+		<h3>மொடியூல் 01 : எண்கள் 1 </h3>
+        <p><strong>அத்தியாயம் 01: இடப்பெறுமானங்கள் <strong> </p>
+        <p><strong>ஆசிரியர்: M.A.அஹம்மது அஸ்வாத் (HDIT) </strong></p>
+    </div>
+
+    <form id="quizForm">
+	      <h2> சரியான விடையை தெரிவு செய்க </h2>
+	      
+        <div class="question-box" id="q1">
+            <span class="q-text">1. 9, 1, 5, 0, 8 ஆகிய இலக்கங்களை ஒருமுறை மட்டும் பயன்படுத்தி உருவாக்கக்கூடிய மிகப்பெரிய ஐந்து இலக்க எண் எது?</span>
+            <label class="option"><input type="radio" name="q1" value="0"> 98 501</label>
+            <label class="option"><input type="radio" name="q1" value="1"> 98 510</label>
+            <label class="option"><input type="radio" name="q1" value="0"> 95 810</label>
+            <div class="feedback" id="f1">சரியான விடை: 98 510</div>
+        </div>
+
+        <div class="question-box" id="q2">
+            <span class="q-text">2. 43 <span class ="underline">5</span>82 என்ற எண்ணில் கோடிடப்பட்ட 5 இன் இடப்பெறுமானம் யாது?</span>
+            <label class="option"><input type="radio" name="q2" value="0"> பத்து</label>
+            <label class="option"><input type="radio" name="q2" value="1"> நூறு</label>
+            <label class="option"><input type="radio" name="q2" value="0"> ஆயிரம்</label>
+            <div class="feedback" id="f2">சரியான விடை: நூறு</div>
+        </div>
+
+        <div class="question-box" id="q3">
+            <span class="q-text">3. குமாரிடம் மூன்று 100 ரூபாய் தாள்களும், நான்கு 10 ரூபாய் நாணயங்களும், இரண்டு 2 ரூபாய் நாணயங்களும் உள்ளன. அவரிடமுள்ள மொத்தப் பணம்:</span>
+            <label class="option"><input type="radio" name="q3" value="0"> 340</label>
+            <label class="option"><input type="radio" name="q3" value="1"> 344</label>
+            <label class="option"><input type="radio" name="q3" value="0"> 432</label>
+            <div class="feedback" id="f3">சரியான விடை: 344</div>
+        </div>
+
+        <div class="question-box" id="q4">
+            <span class="q-text">4.<span class ="underline">7</span>1 439 என்ற எண்ணில் கோடிடப்பட்ட 7 என்ற இலக்கத்தினால் வகைகுறிக்கப்படும் பெறுமானம் யாது?</span>
+            <label class="option"><input type="radio" name="q4" value="1"> 70 000</label>
+            <label class="option"><input type="radio" name="q4" value="0"> 7 000</label>
+            <label class="option"><input type="radio" name="q4" value="0"> 70</label>
+            <div class="feedback" id="f4">சரியான விடை: 70 000</div>
+        </div>
+
+        <div class="question-box" id="q5">
+            <span class="q-text">5. 9, 1, 5, 0, 8 ஆகியவற்றை பயன்படுத்தி உருவாக்கக்கூடிய மிகச்சிறிய ஐந்து இலக்க எண் எது?</span>
+            <label class="option"><input type="radio" name="q5" value="0"> 01589</label>
+            <label class="option"><input type="radio" name="q5" value="1"> 10589</label>
+            <label class="option"><input type="radio" name="q5" value="0"> 15089</label>
+            <div class="feedback" id="f5">சரியான விடை: 10589</div>
+        </div>
+
+        <div class="question-box" id="q6">
+            <span class="q-text">6. அனீக்கிடம் 3 ஆயிரம் ரூபாய் தாள்களும், ஒரு 500 ரூபாய் தாளும், ஒரு 50 ரூபாய் தாளும், ஒரு 5 ரூபாய் நாணயமும் உள்ளன. மொத்தத் தொகை:</span>
+            <label class="option"><input type="radio" name="q6" value="1"> 3555</label>
+            <label class="option"><input type="radio" name="q6" value="0"> 3505</label>
+            <label class="option"><input type="radio" name="q6" value="0"> 3055</label>
+            <div class="feedback" id="f6">சரியான விடை: 3555</div>
+        </div>
+
+        <div class="question-box" id="q7">
+            <span class="q-text">7. 852 என்ற எண்ணில் பத்தின் இடத்தில் உள்ள இலக்கம் எது?</span>
+            <label class="option"><input type="radio" name="q7" value="0"> 8</label>
+            <label class="option"><input type="radio" name="q7" value="1"> 5</label>
+            <label class="option"><input type="radio" name="q7" value="0"> 2</label>
+            <div class="feedback" id="f7">சரியான விடை: 5</div>
+        </div>
+
+        <div class="question-box" id="q8">
+            <span class="q-text">8. 80 64<span class ="underline">6</span>என்ற எண்ணில் கோடிடப்பட்ட 6 இன் இடப்பெறுமானம் யாது?</span>
+            <label class="option"><input type="radio" name="q8" value="1"> ஒன்று</label>
+            <label class="option"><input type="radio" name="q8" value="0"> பத்து</label>
+            <label class="option"><input type="radio" name="q8" value="0"> நூறு</label>
+            <div class="feedback" id="f8">சரியான விடை: ஒன்று</div>
+        </div>
+
+        <div class="question-box" id="q9">
+            <span class="q-text">9. சமீரிடம் ஒரு 500 ரூபாய் தாள், இரண்டு 100 ரூபாய் தாள்கள், ஒரு 5 ரூபாய் நாணயம் உள்ளன. மொத்தப் பணம்:</span>
+            <label class="option"><input type="radio" name="q9" value="0"> 605</label>
+            <label class="option"><input type="radio" name="q9" value="1"> 705</label>
+            <label class="option"><input type="radio" name="q9" value="0"> 750</label>
+            <div class="feedback" id="f9">சரியான விடை: 705</div>
+        </div>
+
+        <div class="question-box" id="q10">
+            <span class="q-text">10. 9, 1, 5, 0, 8 ஆகிய அட்டைகளில் மூன்றை மட்டும் பயன்படுத்தி உருவாக்கக்கூடிய மிகப்பெரிய ஒற்றை எண்:</span>
+            <label class="option"><input type="radio" name="q10" value="0"> 988</label>
+            <label class="option"><input type="radio" name="q10" value="1"> 985</label>
+            <label class="option"><input type="radio" name="q10" value="0"> 980</label>
+            <div class="feedback" id="f10">சரியான விடை: 985 (இறுதியில் 5 வருவதால் ஒற்றை எண்)</div>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="checkQuiz()">விடைகளைச் சமர்ப்பிக்க</button>
+    </form>
+
+    <div id="result-area"></div>
+</div>
+
+<script>
+    function checkQuiz() {
+        let score = 0;
+        const total = 10;
+        const answers = { q1: "1", q2: "1", q3: "1", q4: "1", q5: "1", q6: "1", q7: "1", q8: "1", q9: "1", q10: "1" };
+
+        for (let i = 1; i <= total; i++) {
+            const qName = "q" + i;
+            const selected = document.querySelector(`input[name="${qName}"]:checked`);
+            const feedback = document.getElementById("f" + i);
+            const qBox = document.getElementById("q" + i);
+            
+            feedback.style.display = "block";
+            if (selected && selected.value === "1") {
+                score++;
+                feedback.className = "feedback correct-ans";
+                qBox.style.borderColor = "#27ae60";
+            } else {
+                feedback.className = "feedback wrong-ans";
+                qBox.style.borderColor = "#c0392b";
+            }
+        }
+
+        const percentage = (score / total) * 100;
+        let grade = "", gpa = "", cssClass = "";
+
+        if (percentage >= 75) { grade = "A (மிகச் சிறந்த சித்தி)"; gpa = "4.0"; cssClass = "A"; }
+        else if (percentage >= 65) { grade = "B (மேலான சித்தி)"; gpa = "3.0"; cssClass = "B"; }
+        else if (percentage >= 50) { grade = "C (தகுதியான சித்தி)"; gpa = "2.0"; cssClass = "C"; }
+        else if (percentage >= 35) { grade = "S (சாதாரண சித்தி)"; gpa = "1.0"; cssClass = "S"; }
+        else { grade = "F (தோல்வி)"; gpa = "0.0"; cssClass = "F"; }
+
+        const resultArea = document.getElementById('result-area');
+        resultArea.style.display = "block";
+        resultArea.innerHTML = `
+            <h2>மதிப்பீட்டு முடிவுகள்</h2>
+            <p style="font-size: 20px;">சரியான விடைகள்: <b>${score} / ${total}</b></p>
+            <p style="font-size: 18px;">சதவீதம்: <b>${percentage}%</b></p>
+            <div class="grade-box ${cssClass}">தரம்: ${grade}</div>
+            <p style="font-size: 22px; font-weight: bold;">GPA புள்ளி: ${gpa}</p>
+            <p>பிழையான விடைகளுக்குக் கீழே சரியான விடைகள் சிவப்பில் காட்டப்பட்டுள்ளன.</p>
+            <button onclick="window.location.reload()" style="padding: 10px 20px; cursor: pointer;">மீண்டும் முயற்சி செய்</button>
+        `;
+        window.scrollTo({ top: resultArea.offsetTop, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
